@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.conversation-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.conversation-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 4px 4px 8px;
+  margin-bottom: 4px;
+  border-top: 1px solid #333333;
+}
+
+.conversation-item button {
+  padding: 4px;
+}
+
+.conversation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 3;
+  flex-basis: 0;
+
+  height: 100vh;
+  margin-left: 10px;
+}
+
+.conversation h1 {
+  text-align: center;
+}
+
+.conversation-messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  height: calc(100vh - 3em);
+  overflow-y: scroll;
+}
+
+.conversation-message {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 8px;
+
+  border: 1px solid #333333;
+  background-color: #70f4ff;
+}
+
+.conversation-message h2 {
+  font-size: 16px;
+  padding: 8px;
+}
+
+.conversation-message p {
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 8px;
+}
+
+.conversation-message.right {
+  text-align: right;
+}
